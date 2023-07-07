@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dataset Graph</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li>Portfolio</li>
+            <li><a href="noah_fredericks_portfolio.html">About</a></li>
+            <li><a href="noah_fredericks_portfolio.html">Projects</a></li>
+            <li><a href="noah_fredericks_portfolio.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Economics Programming Project</h1>
+            <h2>Data Analysis and Visualization</h2>
+        </div>
+    </header>
+
+
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="project">
+                <h2>Project Description</h2>
+                <p>
+                This comprehensive program processes, analyzes, and visualizes 
+                a diverse range of crucial economic features obtained through the 
+                FRED API. It offers a streamlined interface that serves as a 
+                convenient alternative to navigating <a href="https://fred.stlouisfed.org" target="_blank">https://fred.stlouisfed.org</a> 
+                for accessing and utilizing this data.<br><br>
+                This task required accessing the FRED API using the requests library and
+                an appropriate API key. A dictionary of the series ID and the name of the series was used 
+                to group the names of each series, with its ID within the API. 
+                After creating a formatted url with the appropriate 
+                parameters, the formatted data was merged with a pandas dataset on the 'date' 
+                column, which was renamed according to the name of each series, and interpolated to 
+                fill in gaps in the data.
+                This was then repeated for each of the desired metrics listed below.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Select Metric:</h5>
+                    <select id="selectColumn" class="custom-select mb-12"></select>
+                    <div id="chartContainer"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Noah Fredericks</p>
+    </footer>
+
+
+</body>
+</html>

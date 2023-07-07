@@ -1,0 +1,232 @@
+:root {
+    --light_color: #f2f2f2;
+    --deep_color: #1a1a1a;
+    --accent_color: #007bff;
+}
+
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: var(--deep_color);
+    background-color: var(--light_color);
+}
+
+
+
+/* Navigation */
+nav {
+    background-color: var(--light_color);
+    padding: 20px;
+}
+
+nav ul {
+    position: absolute;
+    left: 22;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    font-size: 24px;
+    color: var(--accent_color);
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: var(--deep_color);
+    text-decoration: none;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 200px;
+    justify-content: left;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: var(--deep_color);
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: var(--accent_color);
+}
+
+
+
+/* Sections */
+.section {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: var(--deep_color);
+    margin-bottom: 20px;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.section p a{
+    text-align: justify; /* Center the paragraph horizontally */
+    margin-top: 20px; /* Add top margin for spacing */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-decoration: none;
+    justify-content: center;
+    color: var(--accent_color);
+    margin-bottom: 10px;
+}
+
+
+
+/* About */
+.about {
+    margin-bottom: 30px;
+}
+.about h3 {
+    text-decoration: none;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--accent_color);
+    margin-bottom: 10px;
+}
+
+.about h3 a{
+    text-decoration: none;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--accent_color);
+    margin-bottom: 10px;
+}
+.about p {
+    text-align: justify; /* Center the paragraph horizontally */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-decoration: none;
+    justify-content: center;
+    color: var(--deep_color);
+}
+
+.about p a{
+    text-align: justify; /* Center the paragraph horizontally */
+    margin-top: 20px; /* Add top margin for spacing */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-decoration: none;
+    justify-content: center;
+    color: var(--accent_color);
+}
+
+
+/* Projects */
+.project {
+    margin-bottom: 30px;
+}
+.project h3 {
+    text-decoration: none;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--accent_color);
+    margin-bottom: 10px;
+}
+
+.project h3 a{
+    text-decoration: none;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--accent_color);
+    margin-bottom: 10px;
+}
+.project p {
+    text-align: justify; /* Center the paragraph horizontally */
+    margin-top: 20px; /* Add top margin for spacing */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-decoration: none;
+    justify-content: center;
+    color: var(--deep_color);
+    margin-bottom: 10px;
+}
+
+.project p a{
+    text-align: justify; /* Center the paragraph horizontally */
+    margin-top: 20px; /* Add top margin for spacing */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-decoration: none;
+    justify-content: center;
+    color: var(--accent_color);
+    margin-bottom: 10px;
+}
+
+
+
+.container {
+    margin-top: 0px;
+    margin-bottom: 150px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.custom-select {
+    width: 100%;
+}
+
+#chartContainer {
+    padding: 100;
+    height: 400px;
+    width: 700px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--deep_color);
+    color: var(--light_color);
+    padding: 30px;
+    text-align: center;
+}
+footer p {
+    position: absolute;
+    left: 20;
+    justify-content: center;
+    margin: -10px 10px;
+}
