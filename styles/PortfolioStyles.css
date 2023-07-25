@@ -10,7 +10,7 @@
 
 body{
   font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   margin: 0px;
   border: 0px;
@@ -118,7 +118,7 @@ p{
     display: flex;
     flex-direction: column;
     
-    margin-left: 9.5vw;
+    margin-left: 10.3vw;
   }
     .body-container .portfolio-header-container h1{
       font-size: 52px;
@@ -173,6 +173,10 @@ p{
         font-size: 22px;
         color: var(--dark_color);
         text-shadow: 0 0 1px var(--accent_color), 0 0 2px var(--neutral_color);
+      }
+      .body-container .section-container .section .section-content h3{
+        color: var(--deep_color);
+        text-shadow: 0 0 4px var(--accent_color), 0 0 8px var(--neutral_color);
       }
       .body-container .section-container .section .contact-section{
         margin-block: 18px;
