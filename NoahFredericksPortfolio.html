@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <title>Noah Fredericks Portfolio</title>
+    <link rel = "stylesheet" href = "styles/PortfolioStyles.css">
+  </head>
+
+  <body>
+    <!--Navigation-->
+    <div class = "navigation-container">
+      <div class = "logo-space">
+        <a class = "logo-item" href="#Header">Portfolio</a>
+      </div>
+      <div class = "left-flex">
+        <div>
+          <a class = "nav-item" href="#About">About</a>
+        </div>
+        <div>
+          <a class = "nav-item" href="#Projects">Projects</a>
+        </div>
+        <div>
+          <a class = "nav-item" href="#Contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class = "body-container" id="Header">
+      <div class="portfolio-header-container">
+        <h1>Noah Fredericks</h1>
+        <h2>Duke University</h2>
+        <h2>Electrical & Computer Engineering</h2>
+        <h2>Machine Learning Concentration</h2>
+        <h2>Computer Science</h2>
+      </div>
+
+
+
+      <div class="section-container">
+
+
+
+        <section class="section" id="About">
+          <h2>About Me</h2>
+          <div class="section-divider"></div>
+          <div class="section-content">
+            I am a student at Duke University studying stuff. Etc.
+          </div>
+        </section>
+
+
+
+        <section class="section" id="Projects">
+          <h2>Projects</h2>
+          <div class="section-divider"></div>
+          <div class="section-content">
+            <div class="project">
+              <h3><a href="#About">Image Reconstruction</a></h3>
+              <p>
+                This machine learning program utilizes Lasso regression and cross-validation 
+                techniques to create a sparse yet accurate model of an image based on a small 
+                proportion of sampled pixels. This model can be employed to reconstruct an 
+                image with a large number of corrupted pixels.
+              </p>
+            </div>
+
+            <div class="project">
+              <h3><a href="#About">Brain-Computer Interface Movement Decoding</a></h3>
+              <p>
+                Using a Support Vector Machine and cross-validation, this program classifies 
+                movement data acquired from a Brain-Computer Interface, effectively 
+                differentiating between mental decisions of "left" and "right". This  
+                model's functionality can extend to encoding bionic limbs or brain-controlled 
+                robots, enabling them to respond according to desired commands while 
+                utilizing a minimal number of electrodes attached to the user.
+              </p>
+            </div>
+
+            <div class="project">
+              <h3><a href="projects/FRED_visualization.html">Economic Analysis and Visualization</a></h3>
+              <p>
+                This comprehensive program processes, analyzes, and visualizes a 
+                diverse range of crucial economic features obtained through the FRED 
+                API. It offers a streamlined interface that serves as a convenient 
+                alternative to navigating <a href="https://fred.stlouisfed.org" target="_blank">https://fred.stlouisfed.org</a> for accessing 
+                and utilizing this data.
+              </p>
+            </div>
+
+            <div class="project">
+              <h3><a href="#About">Financial Sector Evaluation</a></h3>
+              <p>
+                This program will utilize data from the <a href="FRED_visualization.html">Economic Analysis and Visualization</a> 
+                program to create a regression model utilizing cross-validation. By leveraging 
+                the yfinance library to generate target indexes, it will highlight the 
+                influence of these features on different sectors of the economy. It 
+                should be able to be employed to identify significant macroeconomic factors 
+                impacting each industry and extrapolate their market value based 
+                on these features.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="section" id="Contact">
+          <h2>Contact Information</h2>
+          <div class="section-divider"></div>
+          <div class="contact-section">
+            <div>
+              Phone: +1(570) 617-9668
+            </div>
+            <div>
+              Email: <a href = "mailto: noah.fredericks@duke.edu">noah.fredericks@duke.edu</a>
+            </div>
+            <div>
+              LinkedIn: <a href="https://www.linkedin.com/in/noah-fredericks" target="_blank">https://www.linkedin.com/in/noah-fredericks</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <div class = "footer-container">
+      <div class = "center-flex">
+        &copy; 2023 Noah Fredericks
+      </div>
+    </div>
+  </body>
+</html>

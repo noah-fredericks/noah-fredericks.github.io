@@ -1,0 +1,254 @@
+/*Functions*/
+:root {
+  --light_color: rgb(203, 243, 245);
+  --bright_color: rgb(186, 250, 235);
+  --accent_color: rgb(78, 250, 204);
+  --neutral_color: rgb(18, 153, 144);
+  --deep_color: rgb(7, 74, 71);
+  --dark_color: rgb(5, 29, 21);
+}
+
+body{
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica;
+
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+
+  background-color: var(--light_color);
+  color: var(--dark_color);
+}
+a{
+  text-decoration: none;
+  color: var(--neutral_color);
+  text-shadow: 0 0 2px var(--light_color), 0 0 4px var(--accent_color);
+}
+  a:hover{
+      color: var(--accent_color);
+      text-shadow: 0 0 5px var(--dark_color), 0 0 10px var(--neutral_color);
+  }
+    a:active{
+        color: var(--deep_color);
+        text-shadow: 0 0 1px var(--neutral_color), 0 0 5px var(--dark_color);
+    }
+p{
+  text-align: justify;
+}
+
+/*Navigation*/
+.navigation-container{
+  display: flex;
+  align-items: baseline;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: auto;
+  height: auto;
+
+  background-color: var(--neutral_color);
+  box-shadow: 0px 0px 10px var(--deep_color);
+}
+  .navigation-container .logo-space{
+    font-size: 32px;
+
+    margin: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+    .navigation-container .logo-space .logo-item{
+      color: var(--accent_color);
+      text-shadow: 0px 0px 2px var(--deep_color), 0px 0px 4px var(--light_color);
+    }
+  .navigation-container .left-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: max(35%, 400px);
+
+    z-index: 100;
+  }
+    .navigation-container .left-flex .nav-item{
+      font-size: 20px;
+      
+      display: flex;
+      justify-self: end;
+
+      padding: 4px 12px;
+      border: 1px solid var(--neutral_color);
+
+      color: var(--light_color);
+      text-shadow: 0 0 1px var(--bright_color), 0 0 3px var(--accent_color);
+    }
+      .navigation-container .left-flex .nav-item:hover{
+        border: 1px solid var(--accent_color);
+        border-radius: 24px;
+
+        background-color: var(--neutral_color);
+        box-shadow: 0px 0px 10px var(--accent_color), inset 0px 0px 10px var(--accent_color), 0px 0px 5px var(--neutral_color), inset 0px 0px 5px var(--neutral_color);
+
+        color: var(--accent_color);
+        text-shadow: 0 0 3px var(--deep_color), 0 0 5px var(--neutral_color);
+      }
+        .navigation-container .left-flex .nav-item:active{
+          background-color: var(--bright_color);
+          border: 1px solid var(--dark_color);
+          box-shadow: inset 0px 0px 4px var(--dark_color), inset 0px 0px 12px var(--deep_color);
+
+          color: var(--deep_color);
+          text-shadow: 0 0 8px var(--neutral_color), 0 0 12px var(--accent_color);
+        }
+
+
+
+/*Body*/
+.body-container{
+  font-size: 24px;
+
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  padding-top: 140px;
+
+  color: var(--dark_color);
+}
+  .body-container .portfolio-header-container{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 9.5vw;
+  }
+    .body-container .portfolio-header-container h1{
+      font-size: 52px;
+
+      margin: 0px;
+      margin-bottom: 10px;
+
+      color: var(--deep_color);
+      text-shadow: 0 0 3px var(--neutral_color), 0 0 5px var(--accent_color);
+    }
+    .body-container .portfolio-header-container h2{
+      font-size: 23px;
+
+      margin-block: 3px;
+      
+      color: var(--accent_color);
+      text-shadow: 0 0 3px var(--neutral_color), 0 0 8px var(--dark_color);
+    }
+  .body-container .section-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+
+  }
+    .body-container .section-container .section{
+      flex: 100%;
+
+      margin-block: 20px;
+
+      padding-inline: 20px;
+    }
+      .body-container .section-container .section h2{
+        padding-top: 80px;
+        margin-block: 10px;
+        color: var(--deep_color);
+        text-shadow: 0 0 1px var(--accent_color), 0 0 3px var(--neutral_color);
+      }
+      .body-container .section-container .section .section-divider{
+        border: 1px solid var(--dark_color);
+      }
+      .body-container .section-container .section .section-content{
+        margin-block: 18px;
+
+        border-radius: 30px;
+        border: 1px solid var(--neutral_color);
+        box-shadow: inset 0px 0px 8px var(--accent_color), inset 0px 0px 3px var(--neutral_color);
+
+        background-color: var(--bright_color);
+        padding: 12px 20px;
+
+        font-size: 22px;
+        color: var(--dark_color);
+        text-shadow: 0 0 1px var(--accent_color), 0 0 2px var(--neutral_color);
+      }
+      .body-container .section-container .section .contact-section{
+        margin-block: 18px;
+
+        border-radius: 30px;
+
+        padding-top: 8;
+        padding-left: min(21px, 1vw);
+
+        font-size: 22px;
+        color: var(--dark_color);
+        text-shadow: 0 0 1px var(--accent_color), 0 0 2px var(--neutral_color);
+      }
+      .body-container .section-container .section .contact-section a{
+        text-decoration: none;
+        color: var(--neutral_color);
+        text-shadow: 0 0 2px var(--light_color), 0 0 4px var(--accent_color);
+      }
+        .body-container .section-container .section .contact-section a:hover{
+          color: var(--accent_color);
+          text-shadow: 0 0 5px var(--dark_color), 0 0 10px var(--neutral_color);
+        }
+          .body-container .section-container .section .contact-section a:active{
+            color: var(--deep_color);
+            text-shadow: 0 0 1px var(--neutral_color), 0 0 5px var(--dark_color);
+          }
+
+
+
+
+
+
+
+
+/*Footer*/
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  background-color: var(--deep_color);
+}
+  .footer-container .center-flex{
+    font-size: 16px;
+
+    padding: 20px;
+
+    color: var(--bright_color);
+    opacity: 0.8;
+  }
+
+
+@media screen and (min-width: 1200px){
+  p{
+    text-align: start;
+  }
+  .body-container .section-container .section{
+    flex: 40%;
+  }
+}
+@media screen and (max-width: 700px){
+  p{
+    text-align: start;
+  }
+  .body-container .portfolio-header-container{
+    margin-left: 0px;
+  }
+  .body-container .portfolio-header-container h1{
+    text-align: center;
+  }
+  .body-container .portfolio-header-container h2{
+    text-align: center;
+  }
+}
